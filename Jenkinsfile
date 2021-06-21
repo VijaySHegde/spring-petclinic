@@ -21,7 +21,7 @@ cicd {
     executeNexusIQ = 'no'
     nexusAppName = ''
     packaging = 'jar'
-    packagePath = 'target/*jar'
+    packagePath = 'target/*.jar'
 
     emailRecipientList = ''
     }
