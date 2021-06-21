@@ -8,7 +8,7 @@ cicd {
     junitReportLocation = 'target/surfire-reports/*.xml'
     executeUnitTest = 'yes'
     
-    executeSonar = 'yes'
+    executeSonar = 'no'
     sonarProjectName = ''
     sonarProjectKey = ''
     sonarProjectVersion = ''
@@ -18,7 +18,7 @@ cicd {
     sonarCoverageReportsPath = ''
     coverageExclusions = ''
     
-    executeNexusIQ = 'yes'
+    executeNexusIQ = 'no'
     nexusAppName = ''
     packaging = 'jar'
     packagePath = 'target/*jar'
