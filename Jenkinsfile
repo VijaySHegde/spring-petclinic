@@ -1,5 +1,5 @@
 @Library(['sharedlib@dev']) _
-cicd {
+cicd{
     applicationName = 'petclinic'
     buildNode = ''
     mvnGoals = 'clean install'
