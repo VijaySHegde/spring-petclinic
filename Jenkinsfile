@@ -1,8 +1,8 @@
 @Library(['sharedlib@dev']) _
-cicd{
+cicd {
     applicationName = 'petclinic'
     buildNode = ''
-    mvnGoals = 'clean install'
+    mvnGoals = 'clean package'
     pomFileLocation = 'pom.xml'
 
     junitReportLocation = 'target/surfire-reports/*.xml'
