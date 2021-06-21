@@ -1,7 +1,7 @@
 @Library(['sharedlib@dev']) _
 cicd {
     applicationName = 'petclinic'
-    buildNode = ''
+    buildNode = 'docker'
     mvnGoals = 'clean package'
     pomFileLocation = 'pom.xml'
 
