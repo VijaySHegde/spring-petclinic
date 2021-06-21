@@ -1,4 +1,4 @@
-@Library([])_
+@Library(['sharedlib@dev']) _
 cicd {
     applicationName = 'petclinic'
     buildNode = ''
