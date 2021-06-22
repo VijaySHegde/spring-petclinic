@@ -6,7 +6,7 @@ cicd {
     pomFileLocation = 'pom.xml'
 
     junitReportLocation = 'target/surefire-reports/*.xml'
-    executeUnitTest = 'yes'
+    executeUnitTest = 'no'
     
     executeSonar = 'no'
     sonarProjectName = ''
