@@ -9,8 +9,9 @@
       validate_certs: no
       namespace: default
   - name: Deploy the application
-    community.kubernetes.k8s_info:
+    k8s:
       state: present
+      force: yes
       validate_certs: no
       namespace: default
       definition: "{{ lookup('template', 'deployment.yml') | from_yaml }}"
