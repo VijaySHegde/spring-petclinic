@@ -2,11 +2,11 @@
 cicd {
     applicationName = 'petclinic'
     buildNode = 'docker'
-    mvnGoals = 'clean package'
+    mvnGoals = 'clean package -DskipTests'
     pomFileLocation = 'pom.xml'
 
     junitReportLocation = 'target/surfire-reports/*.xml'
-    executeUnitTest = 'yes'
+    executeUnitTest = 'NO'
     
     executeSonar = 'no'
     sonarProjectName = ''
