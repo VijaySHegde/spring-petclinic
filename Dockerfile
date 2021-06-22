@@ -12,6 +12,6 @@ RUN mvn package -DfinalName=petclinic
 FROM openjdk:8-jre-alpine
 EXPOSE 8080
 WORKDIR /app
-
+RUN ls /app/target
 COPY --from=build-env /app/target/petclinic.jar ./petclinic.jar
 CMD ["/usr/bin/java", "-jar", "/app/petclinic.jar"]
