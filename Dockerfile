@@ -1,13 +1,17 @@
-FROM alpine/git
+FROM maven:3.6.3-jdk-8 AS build-env
 WORKDIR /app
-RUN git clone https://github.com/VijaySHegde/spring-petclinic.git
 
-FROM maven:3.5-jdk-8-alpine
-WORKDIR /app
-COPY --from=0 /app/spring-petclinic /app
-RUN mvn install
+COPY pom.xml ./
+RUN mvn dependency:go-offline
+RUN mvn spring-javaformat:help
+
+COPY . ./
+RUN mvn spring-javaformat:apply
+RUN mvn package
 
 FROM openjdk:8-jre-alpine
+EXPOSE 8080
 WORKDIR /app
-COPY --from=1 /app/target/spring-petclinic-1.5.1.jar /app
-CMD ["java -jar spring-petclinic-1.5.1.jar"]
+
+COPY --from=build-env /app/target/spring-petclinic-2.4.5.jar ./petclinic.jar
+CMD ["/usr/bin/java", "-jar", "/app/petclinic.jar"]
