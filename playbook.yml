@@ -9,7 +9,7 @@
       validate_certs: no
       namespace: default
   - name: Deploy the application
-    k8s:
+    community.kubernetes.k8s_info:
       state: present
       validate_certs: no
       namespace: default
