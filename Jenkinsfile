@@ -4,6 +4,7 @@ cicd {
     buildNode = 'docker'
     mvnGoals = 'clean package'
     pomFileLocation = 'pom.xml'
+    executeMavenGoal = 'no
 
     junitReportLocation = 'target/surefire-reports/*.xml'
     executeUnitTest = 'no'
