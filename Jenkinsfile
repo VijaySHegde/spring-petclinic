@@ -10,19 +10,19 @@ cicd {
     executeUnitTest = 'no'
     
     executeSonar = 'no'
-    sonarProjectName = ''
-    sonarProjectKey = ''
-    sonarProjectVersion = ''
-    sonarProjectLanguage = ''
-    sonarSources = ''
-    sonarBinaries = ''
+    sonarProjectName = 'petclinic'
+    sonarProjectKey = 'org.petclinic'
+    sonarProjectVersion = '1.0'
+    sonarProjectLanguage = 'java'
+    sonarSources = 'src'
+    sonarBinaries = 'target/classes'
     sonarCoverageReportsPath = ''
     coverageExclusions = ''
     
     executeNexusIQ = 'no'
-    nexusAppName = ''
+    nexusAppName = 'petclinic'
     packaging = 'jar'
     packagePath = 'target/*.jar'
 
-    emailRecipientList = ''
+    emailRecipientList = 'hegdevijay118@gmail.com'
     }
