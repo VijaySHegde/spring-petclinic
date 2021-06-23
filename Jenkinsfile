@@ -5,6 +5,7 @@ cicd {
     mvnGoals = 'clean package'
     pomFileLocation = 'pom.xml'
     executeMavenGoal = 'no'
+    executeCoverage = 'YES'
 
     junitReportLocation = 'target/surefire-reports/*.xml'
     executeUnitTest = 'no'
