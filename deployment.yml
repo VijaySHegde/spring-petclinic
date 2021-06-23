@@ -10,7 +10,7 @@ spec:
         app: kubernetes-configmap-reload
     spec:
       containers:
-      - image: "{{ image_id }}"
+      - image: vijayshegde/spring-petclinic-2.4.5.jar:latest
         name: kubernetes-configmap-reload
         ports:
         - containerPort: 8080
