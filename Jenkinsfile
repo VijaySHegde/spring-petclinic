@@ -4,11 +4,11 @@ cicd {
     buildNode = 'docker'
     mvnGoals = 'clean package'
     pomFileLocation = 'pom.xml'
-    executeMavenGoal = 'no'
+    executeMavenGoal = 'yes'
     executeCoverage = 'YES'
 
     junitReportLocation = 'target/surefire-reports/*.xml'
-    executeUnitTest = 'no'
+    executeUnitTest = 'yes'
     
     executeSonar = 'no'
     sonarProjectName = 'petclinic'
