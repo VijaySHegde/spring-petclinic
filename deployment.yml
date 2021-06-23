@@ -10,8 +10,8 @@ spec:
         app: kubernetes-configmap-reload
     spec:
       containers:
-      - image: vijayshegde/spring-petclinic-2.4.5.jar:latest
-        name: kubernetes-configmap-reload
+      - name: kubernetes-configmap-reload
+        image: vijayshegde/spring-petclinic-2.4.5.jar:latest
         ports:
         - containerPort: 8080
           name: http
